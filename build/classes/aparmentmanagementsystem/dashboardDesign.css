@@ -1,0 +1,122 @@
+
+.top-form{
+    -fx-background-color: #fff;
+    -fx-border-color: #000;
+    -fx-border-width: .4px .4px .2px .4px;
+}
+
+.semi-top{
+    -fx-background-color: #efefef;
+    -fx-border-color: #000;
+    -fx-border-width: .2px .4px .4px .4px;
+}
+
+.close{
+    -fx-background-color: transparent;
+    -fx-cursor:hand;
+}
+.close:hover{
+    -fx-background-color: #d6370b;
+}
+
+.minimize{
+    -fx-background-color: transparent;
+    -fx-cursor:hand;
+}
+.minimize:hover{
+    -fx-background-color: #ddd;
+}
+
+.shadow{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 8, 0, 0, 0);
+}
+
+.signout{
+    -fx-background-color: #efefef;
+    -fx-background-radius: 5px;
+    -fx-cursor:hand;
+}
+.signout:hover{
+    -fx-background-color: #ddd;
+}
+
+.white-bg{
+    -fx-background-color: #fff;
+    -fx-background-radius: 6px;
+}
+.card{
+    -fx-background-color: #5ab2ff;
+    -fx-background-radius: 2px 8px 8px 2px;
+}
+
+.funct1-btn{
+    -fx-background-color: linear-gradient(to bottom right, #0325ff, #a6bfff);
+    -fx-background-radius: 8px;
+    -fx-font-size: 16px;
+    -fx-font-family: Arial;
+    -fx-cursor:hand;
+    -fx-border-witdth: 0.6px;
+}
+
+.funct1-btn:hover{
+    -fx-background-color: #434242;
+    -fx-font-size: 16px;
+    -fx-font-family: Arial;
+    -fx-cursor:hand;
+    -fx-text-fill: #ffffff;
+    -fx-border-witdth: .6px;
+}
+
+.funct2-btn{
+    -fx-background-color: linear-gradient(to bottom right, #5ab2ff, #1373f9);
+    -fx-background-radius: 8px;
+    -fx-font-size: 16px;
+    -fx-font-family: Arial;
+    -fx-cursor:hand;
+    -fx-border-witdth: 0.6px;
+}
+
+.funct2-btn:hover{
+    -fx-background-color: #646161;
+    -fx-font-size: 16px;
+    -fx-font-family: Arial;
+    -fx-cursor:hand;
+    -fx-text-fill: #ffffff;
+    -fx-border-witdth: .6px;
+}
+
+.funct3-btn{
+    -fx-background-color: linear-gradient(to bottom right, #26d4e7, #00a9b5);
+    -fx-background-radius: 8px;
+    -fx-font-size: 16px;
+    -fx-font-family: Arial;
+    -fx-cursor:hand;
+    -fx-border-witdth: 0.6px;
+}
+
+.funct3-btn:hover{
+    -fx-background-color: #1e8593;
+    -fx-font-size: 16px;
+    -fx-font-family: Arial;
+    -fx-cursor:hand;
+    -fx-text-fill: #ffffff;
+    -fx-border-witdth: .6px;
+}
+
+.funct4-btn{
+    -fx-background-color: linear-gradient(to bottom right, #0486ea, #7ad0ff);
+    -fx-background-radius: 8px;
+    -fx-font-size: 16px;
+    -fx-font-family: Arial;
+    -fx-cursor:hand;
+    -fx-border-witdth: 0.6px;
+}
+
+.funct4-btn:hover{
+    -fx-background-color: #227fd0;
+    -fx-font-size: 16px;
+    -fx-font-family: Arial;
+    -fx-cursor:hand;
+    -fx-text-fill: #ffffff;
+    -fx-border-witdth: .6px;
+}

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aparmentmanagementsystem.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="602.0" prefWidth="851.0">
+         <children>
+            <AnchorPane prefHeight="602.0" prefWidth="1000.0" styleClass="left-form" stylesheets="@loginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane layoutX="500.0" layoutY="1.0" prefHeight="600.0" prefWidth="501.0" styleClass="right-form" stylesheets="@loginDesign.css">
+                     <children>
+                        <AnchorPane layoutX="-284.0" layoutY="1.4" prefHeight="600.0" prefWidth="501.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label layoutX="57.0" layoutY="405.0" text="Hệ Thống Quản Lý Chung Cư" textFill="#fff9f9">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="161.0" layoutY="65.0" prefHeight="72.0" prefWidth="179.0" text="BlueMoon" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tahoma" size="40.0" />
+                                 </font>
+                              </Label>
+                              <FontAwesomeIcon fill="WHITE" glyphName="BUILDING" layoutX="161.0" layoutY="330.0" size="15em" text="" wrappingWidth="179.14285278320312" />
+                              <Button fx:id="close21" layoutX="427.0" mnemonicParsing="false" onAction="#close" prefHeight="53.0" prefWidth="74.0" styleClass="close" stylesheets="@loginDesign.css" textFill="WHITE">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" text="" wrappingWidth="24.428571701049805">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </FontAwesomeIcon>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="forgetPass_form" layoutX="494.4" layoutY="0.4" onDragDetected="#switchFormLogin" prefHeight="602.0" prefWidth="508.0" stylesheets="@dashboardDesign.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="494.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="599.2" prefWidth="507.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label layoutX="44.0" layoutY="191.0" text="mà bạn đã đăng ký trước đó." textFill="#0e61d6">
+                                 <font>
+                                    <Font name="System Bold Italic" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="44.0" layoutY="163.0" text="sẽ gửi mật khẩu mới về Email và số điện thoại" textFill="#0e61d6">
+                                 <font>
+                                    <Font name="System Bold Italic" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="44.0" layoutY="83.0" text="Có vẻ như bạn đã quên mất mật khẩu" textFill="#bf0000">
+                                 <font>
+                                    <Font name="System Bold Italic" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="44.0" layoutY="135.0" text="Vui lòng nhập đủ thông tin dưới đây, hệ thống" textFill="#0e61d6">
+                                 <font>
+                                    <Font name="System Bold Italic" size="19.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="183.0" layoutY="414.0" prefHeight="31.0" prefWidth="263.0" />
+                              <Label layoutX="59.0" layoutY="416.0" text="Số điện thoại:">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="59.0" layoutY="348.0" text="Email đã đăng ký:">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="212.0" layoutY="346.0" prefHeight="31.0" prefWidth="238.0" />
+                              <TextField layoutX="185.0" layoutY="278.0" prefHeight="31.0" prefWidth="263.0" />
+                              <Label layoutX="59.0" layoutY="280.0" text="Tên tài khoản:">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="110.0" layoutY="500.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="282.0" styleClass="funct3-btn" stylesheets="@dashboardDesign.css" text="        Gửi yêu cầu lấy lại mật khẩu" textFill="WHITE" />
+                              <FontAwesomeIcon fill="WHITE" glyphName="SEND" layoutX="131.0" layoutY="529.0" size="1.5em" />
+                              <Button fx:id="close2" layoutX="434.0" mnemonicParsing="false" onAction="#close" prefHeight="53.0" prefWidth="74.0" styleClass="close" stylesheets="@loginDesign.css" textFill="WHITE">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIcon glyphName="CLOSE" text="" wrappingWidth="24.428571701049805">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </FontAwesomeIcon>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <styleClass>
+                        <String fx:value="white-bg" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </AnchorPane>
+                  <Label layoutX="186.0" layoutY="169.0" text="Sign In">
+                     <font>
+                        <Font name="Berlin Sans FB" size="40.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIcon fill="#1c86ff" glyphName="USER" layoutX="211.0" layoutY="148.0" size="5em" text="" wrappingWidth="59.35714340209961" />
+                  <TextField fx:id="username" layoutX="78.0" layoutY="262.0" onAction="#login" prefHeight="53.0" prefWidth="326.0" promptText="Tên tài khoản" styleClass="textfield" stylesheets="@loginDesign.css">
+                     <font>
+                        <Font size="20.0" />
+                     </font></TextField>
+                  <PasswordField fx:id="password" layoutX="78.0" layoutY="334.0" onAction="#login" prefHeight="53.0" prefWidth="326.0" promptText="Mật khẩu" styleClass="textfield" stylesheets="@loginDesign.css" />
+                  <Button fx:id="loginBtr" layoutX="78.0" layoutY="417.0" mnemonicParsing="false" onAction="#login" prefHeight="45.0" prefWidth="149.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Đăng nhập">
+                     <font>
+                        <Font name="Tahoma" size="26.0" />
+                     </font></Button>
+                  <Button fx:id="forgetPass_btn" layoutX="246.0" layoutY="424.0" mnemonicParsing="false" onAction="#switchFormLogin" prefHeight="31.0" prefWidth="158.0" styleClass="forgetpass" text="Quên mật khẩu" textFill="#1d6ee0">
+                     <font>
+                        <Font name="Tahoma" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
